@@ -1,4 +1,4 @@
-https://leetcode.com/problems/add-two-numbers/
+//https://leetcode.com/problems/add-two-numbers/
 
 /**
  * Definition for singly-linked list.
@@ -24,12 +24,12 @@ public:
 
             int value = val1 + val2 + r;
             r = 0;
-            if(value >= 10){    // Ïåðåíîñ äåñÿòêà
+            if(value >= 10){    // ÃÃ¥Ã°Ã¥Ã­Ã®Ã± Ã¤Ã¥Ã±Ã¿Ã²ÃªÃ 
                 value -= 10;
                 r = 1;
             }
-            ListNode * pos = new ListNode(value);   // Ñîçäàíèå íîâîé ÿ÷åéêè ñïèñêà
-            cur->next = pos;    // Óêàçàòåëü íà íîâóþ ÿ÷åéêó
+            ListNode * pos = new ListNode(value);   // Ã‘Ã®Ã§Ã¤Ã Ã­Ã¨Ã¥ Ã­Ã®Ã¢Ã®Ã© Ã¿Ã·Ã¥Ã©ÃªÃ¨ Ã±Ã¯Ã¨Ã±ÃªÃ 
+            cur->next = pos;    // Ã“ÃªÃ Ã§Ã Ã²Ã¥Ã«Ã¼ Ã­Ã  Ã­Ã®Ã¢Ã³Ã¾ Ã¿Ã·Ã¥Ã©ÃªÃ³
             cur = cur->next;
 
             if(l1 != NULL)
@@ -37,7 +37,7 @@ public:
             if(l2 != NULL)
                 l2 = l2->next;
         }
-        if(r != 0){ // Ïåðåíîñ ïîñëåäíåãî äåñÿòêà
+        if(r != 0){ // ÃÃ¥Ã°Ã¥Ã­Ã®Ã± Ã¯Ã®Ã±Ã«Ã¥Ã¤Ã­Ã¥Ã£Ã® Ã¤Ã¥Ã±Ã¿Ã²ÃªÃ 
             ListNode* pos = new ListNode(r);
             cur->next = pos;
         }
