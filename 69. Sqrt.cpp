@@ -1,9 +1,9 @@
-https://leetcode.com/problems/sqrtx/
+//https://leetcode.com/problems/sqrtx/
 
 class Solution {
 public:
     
-    int newton(double x, double g){   // Метод Ньютона
+    int newton(double x, double g){   // РњРµС‚РѕРґ РќСЊСЋС‚РѕРЅР°
         if(abs(g*g - x) <= 0.00001){
             return g;
         }

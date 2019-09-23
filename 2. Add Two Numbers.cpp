@@ -24,12 +24,12 @@ public:
 
             int value = val1 + val2 + r;
             r = 0;
-            if(value >= 10){    // Ïåðåíîñ äåñÿòêà
+            if(value >= 10){    // Перенос десятка
                 value -= 10;
                 r = 1;
             }
-            ListNode * pos = new ListNode(value);   // Ñîçäàíèå íîâîé ÿ÷åéêè ñïèñêà
-            cur->next = pos;    // Óêàçàòåëü íà íîâóþ ÿ÷åéêó
+            ListNode * pos = new ListNode(value);   // Создание новой ячейки списка
+            cur->next = pos;    // Указатель на новую ячейку
             cur = cur->next;
 
             if(l1 != NULL)
@@ -37,7 +37,7 @@ public:
             if(l2 != NULL)
                 l2 = l2->next;
         }
-        if(r != 0){ // Ïåðåíîñ ïîñëåäíåãî äåñÿòêà
+        if(r != 0){ // Перенос последнего десятка
             ListNode* pos = new ListNode(r);
             cur->next = pos;
         }
